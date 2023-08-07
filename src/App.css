@@ -1,13 +1,5 @@
-@font-face {
-    font-family: 'Byekan';
-    src: url('src/font/Yekan.ttf') format('truetype'); /* Use 'truetype' instead of 'ttf' */
-    /* Add more src declarations for different font formats if needed */
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: 'Byekan', sans-serif;
+    font-family: 'B Yekan', sans-serif;
 }
 
 * {
@@ -20,4 +12,5 @@ body {
     height: 100%;
     margin: 0!important;
     padding: 0!important;
+    border-bottom-left-radius: 600px;
 }

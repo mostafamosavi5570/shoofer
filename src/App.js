@@ -3,6 +3,8 @@ import "./App.css"
 import Header from "./pages/header/Header";
 import Introduction from "./pages/Introduction/Introduction";
 import Attributes from "./pages/attributes/Attributes";
+import About from "./pages/aboutUs/About";
+import Footer from "./pages/footer/Footer";
 
 function App() {
     return (
@@ -11,7 +13,9 @@ function App() {
             <div className="app">
                 <Introduction/>
                 <Attributes/>
+                <About/>
             </div>
+            <Footer/>
 
         </div>
     );

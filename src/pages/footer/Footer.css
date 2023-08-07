@@ -1,0 +1,15 @@
+.footer{
+    width: 100vw;
+    height: 60px;
+    background-color:white;
+
+}
+.redus{
+    background-color: #DAF2FC;
+    width: 100vw;
+    height: 60px;
+    position: relative;
+    top: -30px;
+    border-bottom-left-radius: 600px;
+    z-index: 0;
+}
