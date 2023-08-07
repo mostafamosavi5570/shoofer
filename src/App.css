@@ -1,11 +1,23 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@font-face {
+    font-family: 'Byekan';
+    src: url('src/font/Yekan.ttf') format('truetype'); /* Use 'truetype' instead of 'ttf' */
+    /* Add more src declarations for different font formats if needed */
+    font-weight: normal;
+    font-style: normal;
 }
+
+body {
+    font-family: 'Byekan', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .app {
     background: linear-gradient(to bottom, #516BB3, #5684C3, #559FD7, #49B9EA);
-    height: 100vh;
+    height: 100%;
     margin: 0!important;
     padding: 0!important;
-
 }

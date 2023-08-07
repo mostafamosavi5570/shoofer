@@ -1,0 +1,39 @@
+.attributes{
+    width: 1232px;
+    height: 738px;
+    background-color: #fffdfd;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 154px auto;
+}
+.Head-att{
+    height: 140px;
+    width: 321px;
+    background-color: #2196F3;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    top: -370px;
+    right: -456px;
+}
+.Head-att h2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensure the h2 takes full height of the container */
+}
+.Head-att h2 img {
+    margin-top: 10px; /* Adjust the margin as needed */
+    width: 50px; /* Set the width of the image */
+}
+
+
+
+
+
