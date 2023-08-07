@@ -1,0 +1,15 @@
+.blue-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 39px 30px 39px 118px;
+    border-radius: 30px;
+}
+
+.button-content {
+    display: inline-flex;
+    align-items: center;
+
+}

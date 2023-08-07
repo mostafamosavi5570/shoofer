@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.app {
+    background: linear-gradient(to bottom, #516BB3, #5684C3, #559FD7, #49B9EA);
+    height: 100vh;
+    margin: 0!important;
+    padding: 0!important;
+
+}
