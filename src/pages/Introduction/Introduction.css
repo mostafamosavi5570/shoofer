@@ -1,41 +1,59 @@
 .circle-box {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Adjust this value based on your layout */
+    height: 500px;
 
-    /* Add any other styling you need for the circle-box container */
 }
 
 .circle {
-    width: 200px;
-    height: 200px;
-    background-color: #ffffff;
+    margin-top: 60px;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* Add any other styling you need for the circle */
+    box-shadow: -29px -17px 175px -94px rgba(0, 0, 0, 0.64) inset;
+    position: relative;
+    margin-left: 55px;
 }
 
-.inner-div {
-    width: 80px;
-    height: 80px;
-    background-color: #ffffff;
+.inner-circle {
+    width:400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.50);
     border-radius: 50%;
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    /* Add any other styling you need for the inner-div */
+.inner-circle img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
 }
 
 .text-box {
+    text-align: right;
+    color: white;
     flex: 1;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 63px;
+}
+.text-box h3 {
+    font-size: 24px;
+    text-align: right;
+    justify-content: right;
+    margin-top: 50px;
+    padding-left: 300px;
+    line-height: 1.5;
+
 }
 
-.text-box p {
-    font-size: 16px;
-    text-align: center;
-    /* Add any other styling you need for the text */
-}
