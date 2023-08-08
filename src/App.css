@@ -23,25 +23,31 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
     font-family: 'B Yekan', sans-serif;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -52,14 +58,16 @@ table {
 /*app*/
 .app {
     background: linear-gradient(to bottom, #516BB3, #5684C3, #559FD7, #49B9EA);
-   padding: 4rem;
+    padding: 4rem;
     border-bottom-left-radius: 30%;
 }
-.mainApp{
+
+.mainApp {
     background-color: #DAF2FC;
     padding-bottom: 1rem;
     border-bottom-left-radius: 26%;
 }
+
 /*end app*/
 /*Header*/
 .header {
@@ -70,11 +78,13 @@ table {
     align-items: center;
     padding: 0 1rem;
 }
-.btnHeader{
+
+.btnHeader {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 /*end Header*/
 
 .circle-box {
@@ -84,7 +94,8 @@ table {
     place-items: center;
     margin-bottom: 2rem;
 }
-.circle{
+
+.circle {
     grid-column: span 1 / span 1;
     background-color: transparent;
     border-radius: 50%;
@@ -92,11 +103,12 @@ table {
     justify-content: center;
     align-items: center;
     box-shadow: -29px -17px 175px -94px rgba(0, 0, 0, 0.64) inset;
-   padding: 2rem;
-    overflow:hidden ;
+    padding: 2rem;
+    overflow: hidden;
 
 
 }
+
 .inner-circle {
 
     background-color: rgba(255, 255, 255, 0.50);
@@ -106,6 +118,7 @@ table {
     justify-content: center;
     align-items: center;
 }
+
 .inner-circle img {
     object-fit: cover;
     width: 26rem;
@@ -113,7 +126,7 @@ table {
 
 }
 
-.text-box{
+.text-box {
     grid-column: span 1 / span 1;
     place-self: start;
     color: white;
@@ -121,7 +134,8 @@ table {
     flex-direction: column;
     gap: 2rem;
 }
-.buttons{
+
+.buttons {
     align-self: end;
     display: flex;
     align-items: center;
@@ -129,10 +143,7 @@ table {
 }
 
 
-
-
-
-.attributes{
+.attributes {
     background-color: #fffdfd;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -140,7 +151,8 @@ table {
     max-width: 100rem;
     margin: 0 auto;
 }
-.Head-att{
+
+.Head-att {
     background-color: #2196F3;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -154,31 +166,33 @@ table {
     gap: 1rem;
     padding: 1rem;
 }
-.Head-att img{
+
+.Head-att img {
     width: 3rem;
 }
-.Head-att span{
+
+.Head-att span {
     font-size: 1rem;
     font-weight: bold;
 }
-.attributesContent{
+
+.attributesContent {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 6rem;
 
 }
-.attributesContent div{
+
+.attributesContent div {
     grid-column: span 1 / span 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imgAttributesContent{
+.imgAttributesContent {
     width: 400px;
 }
-
-
 
 .about {
     display: grid;
@@ -204,41 +218,46 @@ table {
     align-items: center;
 
 }
+
 .about-image img {
     margin-left: 10px;
 }
 
 
-
-
 /*responsive*/
 @media only screen and (max-width: 768px) {
-    .attributesContent div{
+    .attributesContent div {
         grid-column: span 2 / span 2;
     }
+
     .circle-box {
         gap: 1rem;
     }
-    .circle{
-        grid-column: span 2 / span 2;
-    }
-    .text-box{
+
+    .circle {
         grid-column: span 2 / span 2;
     }
 
-    .buttons{
+    .text-box {
+        grid-column: span 2 / span 2;
+    }
+
+    .buttons {
         align-self: center;
 
     }
-    .header{
+
+    .header {
         flex-direction: column;
         gap: 1rem;
-        padding-bottom:1rem ;
+        padding-bottom: 1rem;
     }
+
     .about {
 
         gap: 1rem;
     }
+
     .about-text {
         grid-column: span 2 / span 2;
 
@@ -250,7 +269,8 @@ table {
 
 
     }
-    .imgAttributesContent{
+
+    .imgAttributesContent {
         width: 100px;
     }
 
@@ -259,4 +279,5 @@ table {
 @media only screen and (max-width: 376px) {
 
 }
+
 /*end responsive*/

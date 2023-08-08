@@ -41,7 +41,7 @@ const Introduction = () => {
             </div>
             <div className="circle">
                 <div className="inner-circle">
-                    <img src={frame} width={400}/>
+                    <img src={frame}/>
                 </div>
             </div>
         </div>
