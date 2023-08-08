@@ -12,21 +12,25 @@ const Header = () => {
                 <img src={logo} alt="Logo"/>
             </div>
             <div className="btnHeader">
-                <BlueButton>
-                    <span className="button-content">
-                           ورود به وب اپلیکیشن <img src={global} alt="" width={20} style={{
-                        marginLeft: "10px",
+                <WhiteButton style={{
+                    padding:"15px 35px"
+                }}>
+                    <span className="button-content ">
+                    <img src={Import} alt="" width={20} style={{
+                        marginLeft:"5px"
+                    }}/>دانلود اپلیکیشن    </span>
+                </WhiteButton>
 
-                    }}/>
+                <BlueButton style={{
+                 padding:"15px 15px"
+                }}>
+                    <span className="button-content">
+                           <img src={global} alt="" width={20} style={{
+                               marginLeft:"5px"
+                           }}/>ورود به وب اپلیکیشن
                      </span>
                 </BlueButton>
-                <WhiteButton>
-                    <span className="button-content ">
-                    دانلود اپلیکیشن    <img src={Import} alt="" width={20} style={{
-                        marginLeft: "10px",
 
-                    }}/></span>
-                </WhiteButton>
             </div>
 
 

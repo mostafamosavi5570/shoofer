@@ -110,22 +110,26 @@ table {
 }
 
 .inner-circle {
-
-    background-color: rgba(255, 255, 255, 0.50);
-    border-radius: 50%;
-    box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 100%;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2.5rem;
 }
 
 .inner-circle img {
     object-fit: cover;
-    width: 26rem;
-
-
+    width: 25rem;
 }
-
+.footer{
+    display: flex;
+    justify-content: end;
+}
+.footer img{
+    width: 14rem;
+}
 .text-box {
     grid-column: span 1 / span 1;
     place-self: start;
@@ -133,6 +137,14 @@ table {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+.text-box h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+.text-box h3{
+    line-height: 2.5rem;
+    font-size: 24px;
 }
 
 .buttons {
@@ -273,6 +285,25 @@ table {
 }
 
 @media only screen and (max-width: 376px) {
+    .app {
+        padding: 1rem;
+    }
+    .logo img{
+        width: 300px;
+    }
+    .circle-box{
+        width: 3rem;
+    }
+    .text-box h1{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .text-box h3{
+        line-height: 2.5rem;
+
+        text-align: center;
+    }
 
 }
 
