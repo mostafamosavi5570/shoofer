@@ -1,5 +1,4 @@
 import React from "react";
-import "./Attributes.css";
 import Archive from "../../images/archive-tick.png";
 import frame from "../../images/Frame.png";
 

@@ -204,6 +204,12 @@ table {
     align-items: center;
 
 }
+.about-image img {
+    margin-left: 10px;
+}
+
+
+
 
 /*responsive*/
 @media only screen and (max-width: 768px) {

@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.css";
 import Twiter from "../../images/vector.png"
 import linkdin from "../../images/vector-linkedin.png"
 import instagram from "../../images/vector-instagram.png"
