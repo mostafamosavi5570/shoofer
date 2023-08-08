@@ -2,6 +2,7 @@ import React from "react";
 import Twiter from "../../images/vector.png"
 import linkdin from "../../images/vector-linkedin.png"
 import instagram from "../../images/vector-instagram.png"
+
 const About = () => {
     return (
         <div className="about">
@@ -12,7 +13,7 @@ const About = () => {
             </div>
 
             <div className="about-image">
-                <img src={Twiter} alt="" width={20} />
+                <img src={Twiter} alt="" width={20}/>
                 <img src={linkdin} alt="" width={20}/>
                 <img src={instagram} alt="" width={20}/>
             </div>

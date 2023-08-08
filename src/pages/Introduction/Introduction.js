@@ -14,24 +14,25 @@ const Introduction = () => {
                     fontStyle: "bold"
                 }}>معرفی اپلیکیشن شوفر</h1>
                 <h3 style={{
-                    lineHeight:'2.5rem',
+                    lineHeight: '2.5rem',
                     fontSize: "24px",
-                }}>شوفر یک سامانه هوشمند باری درخواست صدور بارنامه میباشد که رانندگان عزیز <br/> میتوانند بدون معطلی و پرداخت
+                }}>شوفر یک سامانه هوشمند باری درخواست صدور بارنامه میباشد که رانندگان عزیز <br/> میتوانند بدون معطلی و
+                    پرداخت
                     هزینه کمیسیون اضافی به راحتی بارنامه خود را <br/> دریافت کنند </h3>
                 <div className="buttons">
-                    <BlueButton style={{ fontSize:"18px"}} >
+                    <BlueButton style={{fontSize: "18px"}}>
                        <span className="button-content special-content">
-                       ورود به وب اپلیکیشن <img src={global} alt="" width={20} />
+                       ورود به وب اپلیکیشن <img src={global} alt="" width={20}/>
                      </span>
                     </BlueButton>
-                    <WhiteButton style={{ border: '1px solid white',fontSize:"18px"}}>
+                    <WhiteButton style={{border: '1px solid white', fontSize: "18px"}}>
                     <span className="button-content " style={{
                         color: "white",
                     }}>
                     دانلود اپلیکیشن    <img src={Import1} alt="" width={20} style={{
 
                         color: 'white',
-                        padding:"5px",
+                        padding: "5px",
 
 
                     }}/></span>

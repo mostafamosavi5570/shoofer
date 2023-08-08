@@ -9,13 +9,13 @@ const Header = () => {
     return (
         <header className="header">
             <div className="logo">
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Logo"/>
             </div>
             <div className="btnHeader">
                 <BlueButton>
                     <span className="button-content">
                            ورود به وب اپلیکیشن <img src={global} alt="" width={20} style={{
-                               marginLeft:"10px",
+                        marginLeft: "10px",
 
                     }}/>
                      </span>
@@ -23,7 +23,7 @@ const Header = () => {
                 <WhiteButton>
                     <span className="button-content ">
                     دانلود اپلیکیشن    <img src={Import} alt="" width={20} style={{
-                        marginLeft:"10px",
+                        marginLeft: "10px",
 
                     }}/></span>
                 </WhiteButton>

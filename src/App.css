@@ -254,20 +254,16 @@ table {
     }
 
     .about {
-
         gap: 1rem;
     }
 
     .about-text {
         grid-column: span 2 / span 2;
-
     }
 
     .about-image {
         grid-column: span 2 / span 2;
         gap: 2rem;
-
-
     }
 
     .imgAttributesContent {

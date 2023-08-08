@@ -8,11 +8,9 @@ const Attributes = () => {
         <div className="attributes">
 
             <div className="Head-att">
-                    <img src={Archive} alt=""/>
-                     <span> ویژگی های شوفر</span>
+                <img src={Archive} alt=""/>
+                <span> ویژگی های شوفر</span>
             </div>
-
-
             <div className="attributesContent">
                 <div className="">dfgdfgdfg</div>
                 <div className="">
