@@ -1,8 +1,8 @@
 import React from 'react';
 import "./BlueButton.css"
-const BlueButton = ({ children }) => {
+const BlueButton = ({ children,style }) => {
     return (
-        <button className="blue-button">
+        <button className="blue-button" style={style}>
             {children}
         </button>
     );

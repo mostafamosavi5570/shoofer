@@ -2,9 +2,9 @@
 
 import React from 'react';
 import "./WhiteButton.css"
-const WhiteButton = ({ children }) => {
+const WhiteButton = ({ children,style }) => {
     return (
-        <button className="white-button">
+        <button className="white-button"  style={style}>
             {children}
         </button>
     );

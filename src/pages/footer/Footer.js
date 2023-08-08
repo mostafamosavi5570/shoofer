@@ -4,7 +4,6 @@ import logo from "../../images/logo۱.png"
 const Footer=()=>{
     return(
         <div className="footer">
-            <div className="redus"></div>
             <div><img src={logo} alt=""/></div>
         </div>
     )

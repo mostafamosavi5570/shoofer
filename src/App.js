@@ -10,11 +10,14 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <div className="app">
-                <Introduction/>
-                <Attributes/>
-                <About/>
-            </div>
+                <div style={{backgroundColor:' #DAF2FC',paddingBottom: '1rem',
+                    borderBottomLeftRadius:' 26%'}}>
+                    <div className="app">
+                        <Introduction/>
+                        <Attributes/>
+                        <About/>
+                    </div>
+                </div>
             <Footer/>
 
         </div>
