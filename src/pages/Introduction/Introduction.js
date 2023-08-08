@@ -1,5 +1,4 @@
 import React from "react";
-import "./Introduction.css";
 import BlueButton from "../../components/button/BlueButton";
 import global from "../../images/global.png";
 import WhiteButton from "../../components/button/WhiteButton";
