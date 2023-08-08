@@ -1,16 +1,256 @@
-body {
-    font-family: 'B Yekan', sans-serif;
+/*reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'B Yekan', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 * {
     margin: 0;
     padding: 0;
 }
 
+/*end reset css*/
+
+/*app*/
 .app {
     background: linear-gradient(to bottom, #516BB3, #5684C3, #559FD7, #49B9EA);
-    height: 100%;
-    margin: 0!important;
-    padding: 0!important;
-    border-bottom-left-radius: 600px;
+   padding: 4rem;
+    border-bottom-left-radius: 30%;
 }
+.mainApp{
+    background-color: #DAF2FC;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 26%;
+}
+/*end app*/
+/*Header*/
+.header {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.btnHeader{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/*end Header*/
+
+.circle-box {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-content: center;
+    place-items: center;
+    margin-bottom: 2rem;
+}
+.circle{
+    grid-column: span 1 / span 1;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -29px -17px 175px -94px rgba(0, 0, 0, 0.64) inset;
+   padding: 2rem;
+    overflow:hidden ;
+
+
+}
+.inner-circle {
+
+    background-color: rgba(255, 255, 255, 0.50);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle img {
+    object-fit: cover;
+    width: 26rem;
+
+
+}
+
+.text-box{
+    grid-column: span 1 / span 1;
+    place-self: start;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.buttons{
+    align-self: end;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+
+
+.attributes{
+    background-color: #fffdfd;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.Head-att{
+    background-color: #2196F3;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    color: white;
+    top: -38px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.Head-att img{
+    width: 3rem;
+}
+.Head-att span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.attributesContent{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 6rem;
+
+}
+.attributesContent div{
+    grid-column: span 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgAttributesContent{
+    width: 400px;
+}
+
+
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-content: center;
+    place-items: center;
+    margin-top: 1rem;
+}
+
+.about-text {
+    grid-column: span 1 / span 1;
+    place-self: start;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-image {
+    grid-column: span 1 / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px) {
+    .attributesContent div{
+        grid-column: span 2 / span 2;
+    }
+    .circle-box {
+        gap: 1rem;
+    }
+    .circle{
+        grid-column: span 2 / span 2;
+    }
+    .text-box{
+        grid-column: span 2 / span 2;
+    }
+
+    .buttons{
+        align-self: center;
+
+    }
+    .header{
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom:1rem ;
+    }
+    .about {
+
+        gap: 1rem;
+    }
+    .about-text {
+        grid-column: span 2 / span 2;
+
+    }
+
+    .about-image {
+        grid-column: span 2 / span 2;
+        gap: 2rem;
+
+
+    }
+    .imgAttributesContent{
+        width: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 376px) {
+
+}
+/*end responsive*/

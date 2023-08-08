@@ -9,7 +9,10 @@ import WhiteButton from "../../components/button/WhiteButton";
 const Header = () => {
     return (
         <header className="header">
-            <div className="buttons">
+            <div className="logo">
+                <img src={logo} alt="Logo" />
+            </div>
+            <div className="btnHeader">
                 <BlueButton>
                     <span className="button-content">
                            ورود به وب اپلیکیشن <img src={global} alt="" width={20} style={{
@@ -27,9 +30,7 @@ const Header = () => {
                 </WhiteButton>
             </div>
 
-            <div className="logo">
-                <img src={logo} alt="Logo" />
-            </div>
+
         </header>
     );
 }

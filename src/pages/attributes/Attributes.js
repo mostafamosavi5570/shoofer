@@ -1,6 +1,7 @@
 import React from "react";
 import "./Attributes.css";
 import Archive from "../../images/archive-tick.png";
+import frame from "../../images/Frame.png";
 
 
 const Attributes = () => {
@@ -8,15 +9,16 @@ const Attributes = () => {
         <div className="attributes">
 
             <div className="Head-att">
-                <h2>
-                    ویژگی های شوفر <span> <img src={Archive} alt=""/></span>
-                </h2>
+                    <img src={Archive} alt=""/>
+                     <span> ویژگی های شوفر</span>
             </div>
 
 
             <div className="attributesContent">
                 <div className="">dfgdfgdfg</div>
-                <div className="">fhffghdf</div>
+                <div className="">
+                    <img src={frame} className="imgAttributesContent"/>
+                </div>
             </div>
 
         </div>

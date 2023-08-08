@@ -1,22 +1,4 @@
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.about-text {
-    flex: 1;
-    padding: 20px;
-    text-align: right;
-    margin-right: 71px;
-    color: white;
-}
-
-.about-image {
-    flex: 1;
-    padding: 20px;
-    margin-left: 369px;
-}
 .about-image img {
     margin-left: 10px;
 }

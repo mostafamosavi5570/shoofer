@@ -8,10 +8,9 @@ import Footer from "./pages/footer/Footer";
 
 function App() {
     return (
-        <div className="App">
+        <div className="">
             <Header/>
-                <div style={{backgroundColor:' #DAF2FC',paddingBottom: '1rem',
-                    borderBottomLeftRadius:' 26%'}}>
+                <div className="mainApp">
                     <div className="app">
                         <Introduction/>
                         <Attributes/>
