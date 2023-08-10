@@ -1,17 +1,66 @@
-
+/* White Button */
 .white-button {
-    background-color: transparent;
-    color: #49B9EA;
-    cursor: pointer;
-    padding: 10px 25px;
-    border: 1px solid #49B9EA;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 14px;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  background-color: transparent;
+  color: #49B9EA;
+  cursor: pointer;
+  padding: 10px 25px;
+  border: 1px solid #49B9EA;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  width: 10rem;
+  height: 3.25rem;
 }
 
+/* Button Content */
 .button-content {
-    display: inline-flex;
-    align-items: center;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  align-items: center !important;
 }
 
+/* Responsive Styles */
+@media only screen and (max-width: 769px) {
+
+  /* Adjustments for white-button */
+  .white-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.65rem;
+    width: 10rem;
+    height: 3.25rem;
+  }
+
+  /* Adjustments for button-content */
+  .button-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* Further adjustments for white-button */
+  .white-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.65rem;
+    width: 10rem;
+    height: 3.25rem;
+
+  }
+}

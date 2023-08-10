@@ -5,11 +5,15 @@
     cursor: pointer;
     padding: 10px 15px;
     border-radius: 30px;
-    font-size: 16px;
     font-weight: 400;
+    font-size: 0.75rem;
+    width: 10rem;
+    height: 3.25rem;
 }
 
 .button-content {
-    display: inline-flex;
-    align-items: center;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
 }

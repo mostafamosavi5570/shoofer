@@ -1,7 +1,7 @@
 import React from "react";
-import Archive from "../../images/archive-tick.png";
-import frame from "../../images/Frame.png";
-
+import Archive from "../../images/archive-tick.svg";
+import frame from "../../images/phone2.svg";
+import SliderWithHyphens from "../../components/slider/SliderWithHyphens";
 
 const Attributes = () => {
     return (
@@ -9,10 +9,12 @@ const Attributes = () => {
 
             <div className="Head-att">
                 <img src={Archive} alt=""/>
-                <span> ویژگی های شوفر</span>
+                <h2> ویژگی های شوفر</h2>
             </div>
             <div className="attributesContent">
-                <div className="">dfgdfgdfg</div>
+                <div className="">
+                    <SliderWithHyphens/>
+                </div>
                 <div className="">
                     <img src={frame} className="imgAttributesContent"/>
                 </div>

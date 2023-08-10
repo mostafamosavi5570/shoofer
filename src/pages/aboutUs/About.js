@@ -1,7 +1,7 @@
 import React from "react";
-import Twiter from "../../images/vector.png"
-import linkdin from "../../images/vector-linkedin.png"
-import instagram from "../../images/vector-instagram.png"
+import Twiter from "../../images/vector.svg"
+import linkdin from "../../images/vector-linkedin.svg"
+import instagram from "../../images/vector-instagram.svg"
 
 const About = () => {
     return (
@@ -13,9 +13,9 @@ const About = () => {
             </div>
 
             <div className="about-image">
-                <img src={Twiter} alt="" width={20}/>
-                <img src={linkdin} alt="" width={20}/>
-                <img src={instagram} alt="" width={20}/>
+                <img src={Twiter} alt="" width={20} style={{ border: '1px solid #fff', borderRadius: '50%', padding: '7px 5px' }} />
+                <img src={linkdin} alt="" width={20} style={{ border: '1px solid #fff', borderRadius: '50%', padding: '5px' }} />
+                <img src={instagram} alt="" width={20} style={{ border: '1px solid #fff', borderRadius: '50%', padding: '5px 5px' }} />
             </div>
 
         </div>

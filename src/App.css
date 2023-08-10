@@ -1,26 +1,109 @@
-/*reset css*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+@font-face {
+    font-family: 'yekanImported';
+    src: url('./font//Yekan.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 
@@ -29,16 +112,20 @@ body {
     font-family: 'B Yekan', sans-serif;
 }
 
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -51,17 +138,22 @@ table {
 * {
     margin: 0;
     padding: 0;
+    font-family: yekanImported;
 }
 
 /*end reset css*/
 
 /*app*/
 .app {
-    background: linear-gradient(to bottom, #516BB3, #5684C3, #559FD7, #49B9EA);
+    background: linear-gradient(to bottom, #405796, #32568a, #4784b3, #3592b9);
     padding: 4rem;
     border-bottom-left-radius: 30%;
+
 }
 
+.imageFilter{
+    
+}
 .mainApp {
     background-color: #DAF2FC;
     padding-bottom: 1rem;
@@ -82,7 +174,8 @@ table {
 .btnHeader {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    padding-right: 45px;
 }
 
 /*end Header*/
@@ -96,40 +189,44 @@ table {
 }
 
 .circle {
-    grid-column: span 1 / span 1;
+
     background-color: transparent;
     border-radius: 50%;
     display: flex;
+    flex: column;
     justify-content: center;
     align-items: center;
-    box-shadow: -29px -17px 175px -94px rgba(0, 0, 0, 0.64) inset;
-    padding: 2rem;
-    overflow: hidden;
-
-
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
 }
 
 .inner-circle {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 100%;
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: inset -10px -4px 25px 9px white;
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2.5rem;
+    background-image: url('./images/Frame.svg');
+    background-size: contain;
+    width: 20rem;
+    height: 20rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 10px;
+
 }
 
-.inner-circle img {
-    object-fit: cover;
-    width: 25rem;
-}
-.footer{
+.footer {
     display: flex;
     justify-content: end;
 }
-.footer img{
+
+.footer img {
     width: 14rem;
 }
+
 .text-box {
     grid-column: span 1 / span 1;
     place-self: start;
@@ -138,14 +235,72 @@ table {
     flex-direction: column;
     gap: 2rem;
 }
-.text-box h1{
+
+.text-box h1 {
     font-size: 36px;
     font-weight: bold;
 }
-.text-box h3{
+
+.text-box h3 {
     line-height: 2.5rem;
     font-size: 24px;
+    font-weight: 400;
 }
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  
+    .text-box h1 {
+        font-size: 30px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .text-box h3 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .circle {
+
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        flex: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .app {
+        width: 100%;
+     }
+    .text-box h1 {
+        font-size: 24px;
+        /* Further reduce font size for very small screens */
+    }
+
+    .text-box h3 {
+        font-size: 18px;
+        /* Further reduce font size for very small screens */
+    }
+
+    .circle {
+
+        background-color: transparent;
+        border-radius: 50%;
+        display: flex;
+        flex: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
 
 .buttons {
     align-self: end;
@@ -179,6 +334,14 @@ table {
     padding: 1rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+    .Head-att h2 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+  }
 .Head-att img {
     width: 3rem;
 }
@@ -189,9 +352,15 @@ table {
 }
 
 .attributesContent {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 6rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   align-content: center;
+   padding-right: 2rem;
+   padding-left: 2rem;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
 
 }
 
@@ -200,6 +369,7 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .imgAttributesContent {
@@ -239,15 +409,58 @@ table {
 /*responsive*/
 @media only screen and (max-width: 768px) {
     .attributesContent div {
-        grid-column: span 2 / span 2;
+        grid-column: span 1 / span 1;
+    }
+    .imgAttributesContent {
+      display: none;
     }
 
+    .attributesContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+     
+     }
     .circle-box {
-        gap: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        align-content: center !important;
+        margin-bottom: 2rem;
+    }
+
+
+    .inner-circle {
+
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 100%;
+        box-shadow: inset -10px -4px 25px 9px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+        background-image: url('./images/Frame.svg');
+        background-size: contain;
+        width: 8rem;
+        height: 8rem;
+        background-position: top;
+        background-repeat: no-repeat;
+
     }
 
     .circle {
-        grid-column: span 2 / span 2;
+        grid-column: span 1 / span 1;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .text-box {
@@ -274,7 +487,7 @@ table {
     }
 
     .about-image {
-        grid-column: span 2 / span 2;
+        grid-column: span 1 / span 2;
         gap: 2rem;
     }
 
@@ -288,23 +501,93 @@ table {
     .app {
         padding: 1rem;
     }
-    .logo img{
-        width: 300px;
-    }
-    .circle-box{
-        width: 3rem;
-    }
-    .text-box h1{
-        font-size: 30px;
-        text-align: center;
-        font-weight: bold;
-    }
-    .text-box h3{
-        line-height: 2.5rem;
+    .imgAttributesContent {
+        display: none;
+      }
 
-        text-align: center;
+    .text-box h1 {
+        font-size: 18px !important;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+    .attributesContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+     
+     }
+
+    .text-box h3 {
+        font-size: 12px !important;
+        padding: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .logo img {
+        width: 13rem;
+    }
+
+
+    .circle-box {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        align-content: center !important;
+        margin-bottom: 2rem;
+    }
+
+    .inner-circle {
+
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 100%;
+        box-shadow: inset -10px -4px 25px 9px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+        background-image: url('./images/Frame.svg');
+        background-size: contain;
+        width: 8rem;
+        height: 8rem;
+        background-position: top;
+        background-repeat: no-repeat;
+        padding: 10px;
+
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+    .app {
+        padding: 1rem;
+    }
+
+    .text-box h1 {
+        font-size: 24px !important;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    .text-box h3 {
+        font-size: 18px !important;
+        padding: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
 
 /*end responsive*/
